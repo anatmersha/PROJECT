@@ -1,0 +1,355 @@
+:root {
+    --darkRed: 
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+    background-color: white;
+    font-size: 20px;
+    justify-content: center;
+}
+nav ul li {
+    list-style-type: none;
+    padding: 15px;
+    font-weight: bold;
+    color: black;
+}         
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li:hover {
+    background-color: rgb(251, 139, 131);
+}
+.headliner {
+    display: flex;
+    flex-wrap: wrap;
+}
+#heroimg {
+    background: url(../images/Fishing_trawlers.jpg) no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 800px;
+}
+#heroH {
+    background-color: black;
+    width: 30%;
+    height: 800px;
+}
+#heroH h1 {
+    font-size: 120px;
+    color: white;
+    margin-left: 15px;
+    margin-top: 0;
+}
+#heroH h1 b {
+    color: red;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 60% 1fr;
+    grid-template-rows: 500px 650px 550px 400px 550px 550px;
+    margin-top: 0;
+}
+main .pollution {
+    border: black 2px solid;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+    word-spacing: 7px;
+}
+main article img {
+    width: 100%;
+    border: none;
+    height: 100%;
+    border: solid 20px black;
+}
+main #mainintro {
+    font-size: 30px;
+}
+main #mainintro h1, h2 {
+    color: red;
+}
+.videointro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.videointro p {
+    width: 43%;
+    background-color: red;
+    height: 300px;
+    text-align: center;    
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+video {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    margin-top: 35px;
+}
+video p b {
+    font-size: 40px;
+}
+.banner {
+    background-color: black;
+    height: 200px;
+    text-align: center;
+}
+.banner h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 10px;
+    padding-top: 15px;
+}
+.banner form {
+    color: white;
+    text-align: center;
+}
+.banner form label {
+    font-size: 20px;
+}
+
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50px;
+}
+.contacts .joinForm {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+input[type=text], input[type=email], input[type=tel] {
+    width: 500px;
+    height: 30px;
+    border-radius: 7%;
+    border: solid black 3px;
+    font-size: 20px;
+}
+input[type=submit] {
+    width: 60px;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 13px;
+    border-radius: 7%;
+    border: solid black 3px;
+    background-color: transparent;
+    color: white;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+form label {
+    font-size: 30px;
+    word-spacing: 2px;
+    letter-spacing: 5px;
+}
+.joinForm {
+    background-color: red;
+    color: white;
+}
+.joinForm h1 {
+    font-size: 30px;
+    letter-spacing: 20px;
+    font-weight: bold;
+}
+.icons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.icons h1 {
+    font-size: 20px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.icons ul li {
+    list-style-type: none;
+    margin: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 1025px) {
+    #heroH h1 {
+        font-size: 79px;
+
+    }
+    main #mainintro {
+        font-size: 20px;
+    }
+    main .pollution {
+        font-size: 17px;
+    }
+    main {
+        grid-template-rows: 350px 560px 450px 300px 370px 351px;
+    }
+    .videointro p {
+        font-size: 20px;
+    }
+    .banner h1 {
+        font-size: 25px;
+        letter-spacing: 10px;
+        padding-top: 0;
+    }
+    .joinForm h1 {
+        font-size: 25px;
+    }
+    input[type=text], input[type=email], input[type=tel] {
+        height: 25px;
+
+    }
+    form label {
+        font-size: 22px;
+    }
+    input[type=submit] {
+        height: 25px;
+    }
+    .icons h1 {
+        font-size: 16px;
+    }
+    .icons ul li {
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        font-size: 13px;
+    }
+    #heroimg {
+        height: 430px;
+    }
+    #heroH {
+        height: 430px;
+    }
+    main {
+        grid-template-rows: 290px 500px 396px 223px 336px 273px;
+    }
+    main #mainintro {
+        font-size: 17px;
+    }
+    main .pollution {
+        font-size: 14px;
+    }
+    .videointro p {
+        font-size: 16px;
+        width: 50%;
+        height: 210px;
+    }
+    form label {
+        font-size: 18px;
+    }
+    .joinForm h1 {
+        font-size: 20px;
+    }
+    .icons h1 {
+        font-size: 14px;
+    }
+    .icons ul li {
+        font-size: 18px;
+        padding: 5px;
+    }  
+
+        
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    #heroimg {
+        height: 300px;
+    }
+    #heroH {
+        height: 300px;
+    }
+    #heroH h1 {
+        font-size: 32px;
+    }
+    nav ul {
+        font-size: 10px;
+    }
+    main #mainintro {
+        font-size: 11px;
+    }
+    main {
+        grid-template-rows: 200px 333px 246px 130px 202px 170px;
+    }
+    main .pollution {
+        font-size: 8px;
+    }
+    .videointro p {
+        font-size: 9px;
+        width: 58%;
+        height: 100px;
+        padding-top: 6px;
+    }
+    video {
+        height: 50vh;
+        margin-top: 15px;
+    }
+    .banner h1 {
+        font-size: 15px;
+    }
+    .banner {
+        height: 100px;
+    }
+    .banner form label {
+        font-size: 10px;
+    }
+    input[type=submit] {
+        height: 22px;
+        font-size: 10px;
+    }
+    .joinForm h1 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    form label {
+        font-size: 10px;
+    }
+    input[type=text], input[type=email], input[type=tel] {
+        width: 250px;
+        height: 17px;
+    }
+    input[type=submit] {
+        height: 16px;
+        font-size: 7px;
+        width: 38px;
+    }
+    .icons ul li {
+        font-size: 10px;
+    }
+    .icons ul {
+        height: 30px;
+    }
+    .icons h1 {
+        font-size: 9px;
+    }
+
+
+    input[type=text], input[type=email], input[type=tel] {
+        width: 290px;
+}
+

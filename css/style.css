@@ -1,0 +1,473 @@
+body {
+    margin-top: 0;
+    padding-top: 0;
+}
+nav ul {
+    display: flex;
+    background-color: white;
+    font-size: 20px;
+    justify-content: center;
+}
+nav ul li {
+    list-style-type: none;
+    padding: 15px;
+    font-weight: bold;
+    color: black;
+}         
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li:hover {
+    background-color: rgb(251, 139, 131);
+}
+.headliner {
+    display: flex;
+    flex-wrap: wrap;
+}
+#heroimg {
+    background: url(../images/sea-22.jpg) no-repeat;
+    background-size: cover;
+    width: 65%;
+    height: 800px;
+}
+#heroH {
+    background-color: black;
+    width: 35%;
+    height: 800px;
+}
+#heroH h1 {
+    font-size: 120px;
+    color: white;
+}
+
+.countdown {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    justify-content: center;
+    align-items: center space-between;
+    word-spacing: 10px;
+}
+.countdown article {
+    width: 14%;
+}
+.countdown article h1, p {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    margin-top: 25px;
+}
+.countdown article p {
+    font-size: 70px;
+    border: solid 2px rgb(211, 22, 22);
+    background-color: rgb(211, 22, 22);
+}
+main #mainheader {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+main .intro {
+    display: flex;
+    justify-content: center;
+}
+main .intro p {
+    font-size: 30px;
+    width: 65%;
+    color: black;
+    font-weight: lighter;
+}
+main .intro p b {
+    font-size: 30px;
+    color: rgb(211, 22, 22);
+}
+#benefitsheader {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    word-spacing: 5px;
+    letter-spacing: 15px;
+    margin-top: 100px;
+}
+.oceanBenefits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.oceanBenefits article {
+    width: 20%;
+    text-align: center;
+    background-color: #9a1750 0.7;
+    margin: 65px;
+    padding: 10px;
+    height: 380px;
+    font-size: 25px;
+}
+.oceanBenefits article:first-child {
+    animation-name: changebg;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+@keyframes changebg {
+    0% {
+    }
+    100% {
+        background-color: rgb(231, 196, 149);
+    }
+}
+.oceanBenefits article:nth-child(2) {
+    animation-name: changebgtwo;
+    animation-delay: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+@keyframes changebgtwo {
+    0% {
+    }
+    100% {
+        background-color: rgb(250, 234, 87);
+    }
+}
+.oceanBenefits article:nth-child(3) {
+    height: 465px;
+    animation-name: changebgthree;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+@keyframes changebgthree {
+    0% {
+    }
+    100% {
+        background-color: rgb(250, 179, 87);
+    }
+}
+.oceanBenefits article:nth-child(4) {
+    animation-name: changebgfour;
+    animation-delay: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+@keyframes changebgfour {
+    0% {
+    }
+    100% {
+        background-color: rgb(255, 203, 34);
+    }
+}
+.oceanBenefits article:nth-child(5) {
+    animation-name: changebgfour;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+@keyframes changebgfour {
+    0% {
+    }
+    100% {
+        background-color: rgb(211, 128, 21);
+    }
+}
+
+.oceanBenefitsTwo #health {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 65px;
+    font-size: 25px;
+}
+.oceanBenefitsTwo #health p {
+    font-size: 25px;
+    width: 65%;
+    color: black;
+    font-weight: lighter;
+}
+.imgGallary {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.imgGallary img {
+    width: 33%;
+}
+.imgGallary img:hover {
+    width: 600px;
+    height: 550px;
+}
+.banner {
+    background-color: black;
+    height: 200px;
+    text-align: center;
+
+}
+.banner h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 10px;
+    padding-top: 15px;
+}
+.banner form {
+    color: white;
+    text-align: center;
+}
+.banner form label {
+    font-size: 20px;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50px;
+}
+.contacts .joinForm {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+input[type=text], input[type=email], input[type=tel] {
+    width: 500px;
+    height: 30px;
+    border-radius: 7%;
+    border: solid black 3px;
+    font-size: 20px;
+}
+input[type=submit] {
+    width: 60px;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 13px;
+    border-radius: 7%;
+    border: solid black 3px;
+    background-color: transparent;
+    color: white;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+form label {
+    font-size: 30px;
+    word-spacing: 2px;
+    letter-spacing: 5px;
+}
+.joinForm {
+    background-color: red;
+    color: white;
+}
+.joinForm h1 {
+    font-size: 30px;
+    letter-spacing: 20px;
+    font-weight: bold;
+}
+.icons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.icons h1 {
+    font-size: 20px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.icons ul li {
+    list-style-type: none;
+    margin: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+@media screen and (max-width: 1025px) {
+    #heroH {
+        height: 696px;        
+        font-size: 110px;
+    }
+    #heroimg {
+        height: 696px;
+    }
+    nav ul {
+        font-size: 16px;
+        }
+    .countdown article h1, p {
+        font-size: 22px;
+    }
+    .oceanBenefits article {
+        font-size: 17px;
+    }
+    .oceanBenefitsTwo #health p {
+        font-size: 25px;
+    }
+    .banner {
+        height: 160px;
+    }
+    .joinForm {
+        height: 250px;
+    }
+    .joinForm h1 {
+        font-size: 15px;
+    }
+    form label {
+        font-size: 20px;
+    }
+    input[type=text], input[type=email], input[type=tel] {
+        height: 28px;
+        width: 400px;
+    }
+    input[type=submit] {
+        font-size: 13px;
+        width: 60px;
+        height: 28px;
+    }    
+    .contactus {
+        height: 250px;
+        font-size: 9px;
+    }
+    .icons h3 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #heroH {
+        height: 696px;        
+        font-size: 86px;
+    }    
+    nav ul {
+        font-size: 13px;
+        } 
+    .oceanBenefits article {
+        margin: 13px;
+        padding: 5px;
+        height: 360px;
+        width: 46%;
+    }
+    .countdown article p {
+        font-size: 25px;
+    }
+    .countdown article h1, p {
+        font-size: 18px;
+    }
+    .oceanBenefitsTwo #health {
+        margin: 20px;
+    }
+    .icons h3 {
+        font-size: 12px;
+        letter-spacing: 4px;
+        word-spacing: 2px;
+    }
+}
+@media screen and (max-width: 425px) {
+    #heroH {
+        height: 360px;        
+        font-size: 45px;
+    }
+    #heroH h1 {
+        font-size: 45px;
+    }
+    #heroimg {
+        height: 360px;        
+    }
+    nav ul {
+        font-size: 1px;
+    }
+    .countdown article p {
+        font-size: 15px;
+    }
+    .countdown article h1, p {
+        font-size: 11px;
+        margin-left: -7px;
+    }
+    main #mainheader {
+        font-size: 25px;
+    }
+    main .intro p {
+        font-size: 15px;
+    }
+    main .intro p b {
+        font-size: 17px;
+    }
+    #benefitsheader {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    .oceanBenefits article {
+        margin: 10px;
+        padding: 0px;
+        height: 330px;
+        width: 46%;
+        font-size: 15px;
+    }
+    .oceanBenefitsTwo #health {
+        margin: 20px;
+        font-size: 15px;
+    }
+    .oceanBenefitsTwo #health p {
+        font-size: 18px;
+        width: 90%;
+    }
+    .banner h1 {
+        font-size: 13px;
+        height: 80px;
+    }
+    .joinForm {
+        height: 177px;
+
+    }
+    .joinForm h1 {
+        font-size: 11px;
+        letter-spacing: 8px;
+    }
+    input[type=text], input[type=email], input[type=tel] {
+        height: 15px;
+        width: 190px;
+    }
+    input[type=submit] {
+        font-size: 8px;
+        height: 15px;
+        margin-top: 5px;
+        
+    }
+    form label {
+        font-weight: bold;
+        font-size: 9px;
+    }
+    .contactus {
+        height: 177px;
+        font-size: 4px;
+    }
+    .icons h3 {
+        font-size: 8px;
+    }
+    .icons ul {
+        flex-direction: row;
+    }
+    .icons ul li {
+        margin: 0;
+    }
+
+
+}
+
+
