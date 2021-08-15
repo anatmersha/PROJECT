@@ -6,8 +6,8 @@
 }
 body {
     background-color: black;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
 }
 nav ul {
     display: flex;
@@ -270,8 +270,6 @@ form label {
         font-size: 18px;
         padding: 5px;
     }  
-
-        
 }
 
 
@@ -291,7 +289,10 @@ form label {
         font-size: 10px;
     }
     main #mainintro {
-        font-size: 11px;
+        font-size: 10px;
+    }
+    #mainintro h1, h2 {
+    font-size: 10px;        
     }
     main {
         grid-template-rows: 200px 333px 246px 130px 202px 170px;
@@ -300,14 +301,15 @@ form label {
         font-size: 8px;
     }
     .videointro p {
-        font-size: 9px;
-        width: 58%;
-        height: 100px;
-        padding-top: 6px;
+        font-size: 10px;
+        width: 62%;
+        height: 134px;
+        padding-top: 11px;
+        margin-top: 40px;
     }
     video {
-        height: 50vh;
-        margin-top: 15px;
+        height: 37vh;
+        margin-top: -9px;
     }
     .banner h1 {
         font-size: 15px;
@@ -332,6 +334,7 @@ form label {
     input[type=text], input[type=email], input[type=tel] {
         width: 250px;
         height: 17px;
+        font-size: 10px;
     }
     input[type=submit] {
         height: 16px;
@@ -347,9 +350,6 @@ form label {
     .icons h1 {
         font-size: 9px;
     }
-
-
     input[type=text], input[type=email], input[type=tel] {
         width: 290px;
 }
-

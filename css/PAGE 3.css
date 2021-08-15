@@ -312,6 +312,9 @@ form label {
     padding: 10px;
 }
 @media screen and (max-width: 1025px) {
+    nav ul li a {
+        font-size: 20px;
+    }
     #heroH h1 b {
         font-size: 80px;
     }
@@ -356,6 +359,9 @@ form label {
     .icons h1 {
         font-size: 15px;
     }
+    .joinForm {
+        height: 390px;
+    }
     .joinForm h1 {
         font-size: 20px;
     }
@@ -373,7 +379,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
     #heroH h1 {
-        font-size: 70px;
+        font-size: 78px;
     }
     #heroH h1 b {
         font-size: 75px;
@@ -438,11 +444,17 @@ form label {
     } 
 }
 @media screen and (max-width: 425px){
+    #heroH {
+        height: 550px;
+    }
     #heroH h1 {
         font-size: 46px;
     }
     #heroH h1 b {
         font-size: 47px;
+    }
+    #heroimg {
+        height: 550px;
     }
     nav ul {
         font-size: 12px;
@@ -488,5 +500,40 @@ form label {
     }
     .events article {
         width: 97%;
+    }
+    .circle article {
+        width: 250px;
+        height: 250px;
+    }
+    @keyframes heartbeat {
+        0% {
+            width: 250px;
+            height: 250px;
+        }
+        100% {
+            width: 400px;
+            height: 400px;
+        }
+    }
+    .circle p {
+        font-size: 13px;
+    }
+    .banner {
+        height: 130px;
+    }
+    .banner h1 {
+        font-size: 13px;
+    }
+    .banner form label {
+        font-size: 9px;
+    }
+    input[type=submit] {
+        font-size: 11px;
+    }
+    input[type=text], input[type=email], input[type=tel] {
+        font-size: 15px;
+    }
+    .joinForm h1 {
+        font-size: 10px;
     }
 }
